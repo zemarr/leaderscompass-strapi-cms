@@ -48,12 +48,12 @@ module.exports = ({ env }) => {
     },
     postgres: {
       connection: {
-        connectionString: env('DATABASE_URL', 'postgres://zemarr:9RYFklwntfa6`@ep-autumn-credit-12733518.us-east-1.aws.neon.tech/neondb'),
-        host: env('DATABASE_HOST', 'ep-autumn-credit-12733518.us-east-1.aws.neon.tech'),
+        connectionString: env('DATABASE_URL', 'localhost'),
+        host: env('DATABASE_HOST', 'strapi'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'neondb'),
-        user: env('DATABASE_USERNAME', 'zemarr'),
-        password: env('DATABASE_PASSWORD', '9RYFklwntfa6'),
+        database: env('DATABASE_NAME', 'strapi'),
+        user: env('DATABASE_USERNAME', 'strapi'),
+        password: env('DATABASE_PASSWORD', 'strapi'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),

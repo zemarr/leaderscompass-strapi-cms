@@ -1,0 +1,33 @@
+{
+  "name": "ngo-blog",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@ckeditor/ckeditor5-markdown-gfm": "^39.0.1",
+    "@strapi/plugin-i18n": "4.12.7",
+    "@strapi/plugin-users-permissions": "4.12.7",
+    "@strapi/strapi": "4.12.7",
+    "better-sqlite3": "8.5.0",
+    "pg": "^8.11.3",
+    "strapi-neon-tech-db-branches": "^0.1.18"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "f2ae6187-3e83-47df-a82a-e2ffa77ecff1"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
